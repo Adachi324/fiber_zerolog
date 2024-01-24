@@ -1,4 +1,4 @@
-module fiber_zerolog
+module github.com/Adachi324/fiber_zerolog
 
 go 1.19
 
