@@ -1,7 +1,7 @@
 package example
 
 import (
-	"fiber_zerolog"
+	"github.com/Adachi324/fiber_zerolog"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/log"
 	"github.com/rs/zerolog"

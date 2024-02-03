@@ -1,7 +1,6 @@
 package fiber_zerolog
 
 import (
-	"fmt"
 	"github.com/gofiber/fiber/v2"
 )
 
@@ -28,7 +27,6 @@ func InjectLogger(cfg ...InjectLoggerConfig) func(ctx *fiber.Ctx) error {
 		l := config.Logger.logger.With()
 		for _, field := range config.FieldsFromHeader {
 			val := string(ctx.Request().Header.Peek(field))
-			fmt.Println(val)
 			if val != "" {
 				l = l.Str(field, val)
 			}
